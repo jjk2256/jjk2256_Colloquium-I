@@ -119,7 +119,9 @@ const speed = 40; // Typing speed in milliseconds
 let index = 0; // Initialize index for typing effect
 
 const typingEffectElement = document.getElementById("typingEffect");
-typingEffectElement.style.fontFamily = "'Host Grotesk', sans-serif"; // Set the font
+if (typingEffectElement) {
+    typingEffectElement.style.fontFamily = "'Host Grotesk', sans-serif"; // Set the font
+}
 
 function typeWriter() {
     if (index < text.length) {
